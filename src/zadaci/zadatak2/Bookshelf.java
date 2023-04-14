@@ -4,19 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bookshelf {
-
-    private List<Book> listOfBooks;
+    private List<zadaci.zadatak2.Book> listOfBooks;
 
     public Bookshelf(){
         this.listOfBooks = new ArrayList<>();
     }
 
-    public boolean addBook(Book theBook){
+    public boolean addBook(zadaci.zadatak2.Book theBook){
         return listOfBooks.add(theBook);
     }
 
     public boolean containsBook(String title){
-        for (Book theBook : listOfBooks){
+        for (zadaci.zadatak2.Book theBook : listOfBooks){
             if(theBook.getTitle().equals(title)){
                 return true;
             }
@@ -25,7 +24,7 @@ public class Bookshelf {
     }
 
     public boolean containsBook(long ISBN){
-        for (Book theBook : listOfBooks){
+        for (zadaci.zadatak2.Book theBook : listOfBooks){
             if(theBook.getISBN() == ISBN){
                 return true;
             }
@@ -36,7 +35,4 @@ public class Bookshelf {
     public String printBookshelf(){
         return listOfBooks.toString();
     }
-
-
-
 }

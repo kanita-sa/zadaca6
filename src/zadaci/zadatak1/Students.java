@@ -7,7 +7,6 @@ public class Students {
     public Students(final String name){
         this.name = name;
     }
-
     public Students(final String name, final int age){
         this.name = name;
         this.age = age;
@@ -19,7 +18,6 @@ public class Students {
     public int getAge(){
         return age;
     }
-
 
     @Override
     public String toString(){
